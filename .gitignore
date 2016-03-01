@@ -1,0 +1,8 @@
+*.tar.gz
+development_kit
+images
+objects
+log/
+snapshot/
+*.swp
+*.swo
