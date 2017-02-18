@@ -1,8 +1,8 @@
 # Mini Places Challenge
 
-Due: TBD
+Due: Wednesday, Mar 8, 2017, 11:55pm
 
-This is Homework 3 for Computer Vision ([CS 280](https://inst.eecs.berkeley.edu/~cs280/sp16/)) at UC Berkeley.
+This is Homework 2 for Computer Vision (CS 280) at UC Berkeley.
 
 The assignment is to build and train a scene classifier for images.
 The dataset we'll use is the MIT Mini Places dataset,
@@ -24,7 +24,7 @@ You can use the included `get_miniplaces.sh` script, or manually grab from
 
 ## Example
 
-This repo provides an [example](https://github.com/jeffdonahue/CS280MiniPlaces/blob/master/train_places_net.py)
+This repo provides an [example](https://github.com/tinghuiz/CS280MiniPlaces/blob/master/train_places_net.py)
 of using [Caffe](http://caffe.berkeleyvision.org/) to train and evaluate a convnet --
 a variant of AlexNet -- for this task.
 Assuming you have run `./get_miniplaces.sh` to download and setup the data, and have
@@ -36,7 +36,7 @@ python train_places_net.py
 ```
 
 A log of the output you should get from running this is available
-(see [`log/miniplaces.train_log.txt`](https://github.com/jeffdonahue/CS280MiniPlaces/blob/master/log/miniplaces.train_log.txt)).
+(see [`log/miniplaces.train_log.txt`](https://github.com/tinghuiz/CS280MiniPlaces/blob/master/log/miniplaces.train_log.txt)).
 The full command used to train and log to the provided file is as follows:
 
 ```
@@ -68,7 +68,7 @@ You should consider the result from the provided example as a baseline
 and try to come up with a model that does significantly better on this task.
 (It's definitely possible! See
 [MIT's leaderboard](http://miniplaces.csail.mit.edu/leaderboard-team.php)
-for some motivation -- the winning team achieved 81.57% top 5 accuracy on the test set.)
+for some motivation -- the winning team achieved 86.07% top 5 accuracy on the test set.)
 
 You may **not** use outside data in your submission -- including using pretrained models on, e.g., ImageNet.
 See **Competition rules** below for details.
@@ -104,7 +104,7 @@ Besides these rules, you're mostly free to do whatever you want!
 You will create a text (CSV) file specifying your model's
 top 5 predicted classes (in order of confidence) for each image in the test set,
 and submit this file to an evaluation server for scoring as a deliverable of this assignment.
-A sample is provided in this repo ([`sample_submission.csv`](https://github.com/jeffdonahue/CS280MiniPlaces/blob/master/sample_submission.csv)).
+A sample is provided in this repo ([`sample_submission.csv`](https://github.com/tinghuiz/CS280MiniPlaces/blob/master/sample_submission.csv)).
 If you're using the provided Caffe example (`train_places_net.py`),
 the test set predictions are formatted in this manner for you
 and dumped to a file `top_5_predictions.test.csv` after training.
