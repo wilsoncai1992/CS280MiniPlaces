@@ -127,43 +127,43 @@ def Vggnet(data, labels=None, train=False, param=learned_param,
     n = caffe.NetSpec()
     n.data = data
     conv_kwargs = dict(param=param, train=train)
-    
+
     # Conv 1
     n.conv1_1, n.relu1_1 = conv_relu(n.data, 3, 64, pad=1, stride=1, **conv_kwargs)
     n.conv1_2, n.relu1_2 = conv_relu(n.relu1_1, 3, 64, pad=1, stride=1, **conv_kwargs)
     # Pool 1
     n.pool1 = max_pool(n.relu1_2, 2, stride=2, train=train)
-    
+
     # Conv 2
     n.conv2_1, n.relu2_1 = conv_relu(n.pool1, 3, 128, pad=1, group=1, **conv_kwargs)
     n.conv2_2, n.relu2_2 = conv_relu(n.relu2_1, 3, 128, pad=1, group=1, **conv_kwargs)
-    
+
     # Pool 2
     n.pool2 = max_pool(n.relu2_2, 2, stride=2, train=train)
-    
+
     # Conv 3
     n.conv3_1, n.relu3_1 = conv_relu(n.pool2, 3, 256, pad=1, **conv_kwargs)
     n.conv3_2, n.relu3_2 = conv_relu(n.relu3_1, 3, 256, pad=1, **conv_kwargs)
     n.conv3_3, n.relu3_3 = conv_relu(n.relu3_2, 3, 256, pad=1, **conv_kwargs)
-    
+
     # Pool 3
     n.pool3 = max_pool(n.relu3_3, 2, stride=2, train=train)
-    
+
     # Conv 4
     n.conv4_1, n.relu4_1 = conv_relu(n.pool3, 3, 512, pad=1, group=1, **conv_kwargs)
-    n.conv4_2, n.relu4_3 = conv_relu(n.relu4_1, 3, 512, pad=1, group=1, **conv_kwargs)
+    n.conv4_2, n.relu4_2 = conv_relu(n.relu4_1, 3, 512, pad=1, group=1, **conv_kwargs)
     n.conv4_3, n.relu4_3 = conv_relu(n.relu4_2, 3, 512, pad=1, group=1, **conv_kwargs)
     # Pool 4
-    n.pool4 = max_pool(n.relu4_3, 2, stride=2, train=train)    
-    
+    n.pool4 = max_pool(n.relu4_3, 2, stride=2, train=train)
+
     # Conv 5
     n.conv5_1, n.relu5_1 = conv_relu(n.pool4, 3, 512, pad=1, group=1, **conv_kwargs)
     n.conv5_2, n.relu5_2 = conv_relu(n.relu5_1, 3, 512, pad=1, group=1, **conv_kwargs)
     n.conv5_3, n.relu5_3 = conv_relu(n.relu5_2, 3, 512, pad=1, group=1, **conv_kwargs)
     # Pool 5
     n.pool5 = max_pool(n.relu5_3, 2, stride=2, train=train)
-    
-    
+
+
     # Fully Connected
     n.fc6, n.relu6 = fc_relu(n.pool5, 4096, param=param)
     n.drop6 = L.Dropout(n.relu6, in_place=True)
