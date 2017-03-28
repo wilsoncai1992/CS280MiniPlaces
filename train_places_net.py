@@ -244,6 +244,8 @@ def miniplaces_solver(train_net_path, test_net_path=None):
     # Snapshots are files used to store networks we've trained.  Here, we'll
     # snapshot twice per learning rate step to the location specified by the
     # --snapshot_dir and --snapshot_prefix args.
+
+    # WILSON: load snapshot
     s.snapshot = args.stepsize // 2
     s.snapshot_prefix = snapshot_prefix()
 
