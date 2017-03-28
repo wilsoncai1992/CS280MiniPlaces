@@ -1,0 +1,7 @@
+02/28/2017 04:19:06 PM Start training
+02/28/2017 04:19:07 PM From /Users/wilsoncai/Downloads/ConvNet-places/my_alexnet_cnn.py:196: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+02/28/2017 04:19:08 PM Dataset created - images list and labels list
+02/28/2017 04:19:08 PM Now split images and labels in Training and Test set...
+02/28/2017 04:19:13 PM Epoch 0

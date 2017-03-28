@@ -1,0 +1,54 @@
+02/28/2017 04:20:21 PM Start training
+02/28/2017 04:20:21 PM From /Users/wilsoncai/Downloads/ConvNet-master/my_alexnet_cnn.py:195: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+02/28/2017 04:20:23 PM Dataset created - images list and labels list
+02/28/2017 04:20:23 PM Now split images and labels in Training and Test set...
+02/28/2017 04:20:28 PM Epoch 0
+02/28/2017 04:20:36 PM Training Accuracy = 0.00000
+02/28/2017 04:20:36 PM Training Loss = 35069912.000000
+02/28/2017 04:20:42 PM Training Accuracy = 0.00000
+02/28/2017 04:20:42 PM Training Loss = 16872578.000000
+02/28/2017 04:20:49 PM Training Accuracy = 0.01562
+02/28/2017 04:20:49 PM Training Loss = 15716747.000000
+02/28/2017 04:20:49 PM Training Accuracy = 0.00000
+02/28/2017 04:20:49 PM Training Loss = 25424324.000000
+02/28/2017 04:20:49 PM Epoch 1
+02/28/2017 04:20:56 PM Training Accuracy = 0.17188
+02/28/2017 04:20:56 PM Training Loss = 14843880.000000
+02/28/2017 04:21:02 PM Training Accuracy = 0.46875
+02/28/2017 04:21:02 PM Training Loss = 3287026.000000
+02/28/2017 04:21:09 PM Training Accuracy = 0.04688
+02/28/2017 04:21:09 PM Training Loss = 8895492.000000
+02/28/2017 04:21:09 PM Training Accuracy = 0.12500
+02/28/2017 04:21:09 PM Training Loss = 3286927.500000
+02/28/2017 04:21:09 PM Epoch 2
+02/28/2017 04:21:16 PM Training Accuracy = 0.00000
+02/28/2017 04:21:16 PM Training Loss = 15928366.000000
+02/28/2017 04:21:22 PM Training Accuracy = 0.00000
+02/28/2017 04:21:22 PM Training Loss = 19073180.000000
+02/28/2017 04:21:29 PM Training Accuracy = 0.64062
+02/28/2017 04:21:29 PM Training Loss = 5367568.500000
+02/28/2017 04:21:29 PM Training Accuracy = 0.62500
+02/28/2017 04:21:29 PM Training Loss = 750538.312500
+02/28/2017 04:21:29 PM Epoch 3
+02/28/2017 04:21:36 PM Training Accuracy = 0.14062
+02/28/2017 04:21:36 PM Training Loss = 7879379.000000
+02/28/2017 04:21:42 PM Training Accuracy = 0.00000
+02/28/2017 04:21:42 PM Training Loss = 17134912.000000
+02/28/2017 04:21:48 PM Training Accuracy = 0.07812
+02/28/2017 04:21:48 PM Training Loss = 7556033.500000
+02/28/2017 04:21:49 PM Training Accuracy = 0.12500
+02/28/2017 04:21:49 PM Training Loss = 5176840.000000
+02/28/2017 04:21:49 PM Epoch 4
+02/28/2017 04:21:56 PM Training Accuracy = 0.20312
+02/28/2017 04:21:56 PM Training Loss = 5937036.000000
+02/28/2017 04:22:02 PM Training Accuracy = 0.18750
+02/28/2017 04:22:02 PM Training Loss = 7375429.000000
+02/28/2017 04:22:09 PM Training Accuracy = 0.37500
+02/28/2017 04:22:09 PM Training Loss = 2659293.000000
+02/28/2017 04:22:09 PM Training Accuracy = 0.50000
+02/28/2017 04:22:09 PM Training Loss = 2245883.000000
+02/28/2017 04:22:12 PM Test accuracy: 0.15625
+02/28/2017 04:22:13 PM Test accuracy: 0.57812
+02/28/2017 04:22:15 PM Test accuracy: 0.12500
